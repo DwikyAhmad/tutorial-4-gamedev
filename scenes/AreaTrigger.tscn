@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6ju0e5cq4oyq"]
+
+[ext_resource type="Script" path="res://scenes/AreaTrigger.gd" id="1_5dt56"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_57de7"]
+size = Vector2(82, 66)
+
+[node name="ObjectiveArea" type="Area2D"]
+script = ExtResource("1_5dt56")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_57de7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

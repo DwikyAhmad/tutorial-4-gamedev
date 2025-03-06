@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cytd32unu4w7b"]
+
+[ext_resource type="Script" path="res://scenes/FallingFish.gd" id="1_6p85o"]
+[ext_resource type="Texture2D" uid="uid://bj7p6binvtp2i" path="res://assets/kenney_platformerpack/PNG/Tiles/bomb.png" id="1_yovk4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_24bcx"]
+radius = 57.2451
+
+[node name="Bomb" type="RigidBody2D"]
+script = ExtResource("1_6p85o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_yovk4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 11)
+scale = Vector2(0.7, 0.7)
+shape = SubResource("CircleShape2D_24bcx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
