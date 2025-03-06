@@ -72,15 +72,15 @@ texture = ExtResource("3_l74ve")
 [node name="ObjectiveArea" parent="FamiliarLookingRocket" instance=ExtResource("4_ng74n")]
 position = Vector2(-1.00001, 4)
 scale = Vector2(3.56157, 7.14906)
-sceneName = "Level2"
+scene_name = "Level2"
 
 [node name="ObjectiveArea" parent="." instance=ExtResource("4_ng74n")]
 position = Vector2(739, 604)
 scale = Vector2(20.92, 2.08)
-sceneName = "LoseScreen"
+scene_name = "LoseScreen"
 
 [node name="Spawner" type="Node2D" parent="."]
-position = Vector2(876, -148)
+position = Vector2(899, -148)
 script = ExtResource("5_api51")
 obstacle = ExtResource("6_1llyq")
-sceneName = "LoseScreen"
+scene_name = "LoseScreen"

@@ -108,18 +108,18 @@ position = Vector2(59, -46)
 [node name="ObjectiveArea" parent="." instance=ExtResource("3_2hn86")]
 position = Vector2(1566, -436)
 scale = Vector2(-0.780703, 1.65409)
-sceneName = "WinScreen"
+scene_name = "WinScreen"
 
 [node name="ObjectiveArea2" parent="." instance=ExtResource("3_2hn86")]
 position = Vector2(352, 106)
 scale = Vector2(2.4193, 0.774089)
-sceneName = "LoseScreen"
+scene_name = "LoseScreen"
 
 [node name="Spawner" type="Node2D" parent="."]
 position = Vector2(495, -510)
 script = ExtResource("4_3tnhe")
 obstacle = ExtResource("5_gly7b")
-sceneName = "LoseScreen"
+scene_name = "LoseScreen"
 range1 = -500
 range2 = 500
 
@@ -127,7 +127,7 @@ range2 = 500
 position = Vector2(28, -1157)
 script = ExtResource("4_3tnhe")
 obstacle = ExtResource("6_qdab0")
-sceneName = "LoseScreen"
+scene_name = "LoseScreen"
 range1 = 0
 range2 = 0
 
@@ -135,7 +135,7 @@ range2 = 0
 position = Vector2(294, -1157)
 script = ExtResource("4_3tnhe")
 obstacle = ExtResource("6_qdab0")
-sceneName = "LoseScreen"
+scene_name = "LoseScreen"
 range1 = 0
 range2 = 0
 
@@ -143,7 +143,7 @@ range2 = 0
 position = Vector2(522, -1159)
 script = ExtResource("4_3tnhe")
 obstacle = ExtResource("6_qdab0")
-sceneName = "LoseScreen"
+scene_name = "LoseScreen"
 range1 = 0
 range2 = 0
 
